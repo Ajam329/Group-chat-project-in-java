@@ -1,27 +1,55 @@
-# Group Chat Project in Java using Socket
+**Chat Room Program Manual**
 
-This is a simple group chat application that allows multiple users to communicate with each other in real time over a network. It uses Java sockets and threads to establish connections and exchange messages between a server and multiple clients.
+**1. Overview:**
+   - The chat room program consists of two parts: the server and the client.
+   - The server manages connections and broadcasts messages to all connected clients.
+   - Each client connects to the server and can send messages to the chat room.
 
-## How it works
+**2. Files:**
+   - Server: `Server.java`
+   - Client: `Client.java`
 
-- The server class creates a `ServerSocket` object that listens for incoming connections from clients on a specified port.
-- The client class creates a `Socket` object that connects to the server on the same port.
-- The thread class implements the `Runnable` interface and overrides the `run` method. This class handles the reading and writing of messages between the server and the clients.
-- The server creates an `ExecutorService` object to manage a pool of threads. For each client connection, it creates a new thread object and executes it using the `ExecutorService`.
-- The client creates two thread objects, one for reading messages from the server and one for writing messages to the server. It starts both threads using the `start` method.
-- The thread class uses a loop to read and write messages until a termination condition is met, such as typing "exit" or "bye". It closes the socket and the streams when the communication is over.
+**3. How to Run:**
+   - Compile both `Server.java` and `Client.java` using a Java compiler.
+   - Open two separate command prompt or terminal windows.
 
-## How to run
+**4. Start the Server:**
+   - In one window, navigate to the directory containing `Server.class`.
+   - Run the command: `java Server`
 
-- First create two separate projects in Netbeans. Add client in one and server in other.
-- Run the Server.java file in Server project to initiate the server.
-- Run the register_UI.java file to open a user registration popup.
-- Enter your name and click "Register" to join the chat.
-- Repeat the above steps for each client you want to add to the chat.
-- Start typing messages in the terminal and press "Enter" to send them to the group.
-- Type "exit" or "bye" to leave the chat.
+**5. Connect Clients:**
+   - In the other window, navigate to the directory containing `Client.class`.
+   - Run the command: `java Client`
+   - Repeat step 5 for additional clients.
 
-## References
+**6. Client Commands:**
+   - After connecting, clients can perform the following commands:
+     - `/nick [newNickname]`: Change the nickname.
+     - `/quit`: Disconnect from the chat.
 
-- [A Group chat application in Java](^5^)
-- [Create a chat app with java sockets](^6^)
+**7. Interacting in the Chat:**
+   - Type your messages in the client's console and press Enter to send.
+   - Messages will be broadcasted to all connected clients.
+
+**8. Nickname Change:**
+   - Use the `/nick` command followed by the desired nickname to change your nickname.
+   - Example: `/nick NewUser`
+
+**9. Disconnecting:**
+   - Use the `/quit` command to disconnect from the chat.
+   - The server will broadcast a message when a user leaves the chat.
+
+**10. Notes:**
+   - The server listens on port `9999`.
+   - Each client connects to the server's IP address (`127.0.0.1` for local testing).
+   - The server uses a thread pool to handle multiple client connections concurrently.
+
+**11. Exiting:**
+   - To stop the server, press `Ctrl + C` in the window where the server is running.
+   - Close the client windows to exit.
+
+**12. Troubleshooting:**
+   - If any unexpected errors occur, restart the server and reconnect the clients.
+   - Check that the server port (`9999`) is not blocked by a firewall.
+
+**Note:** This chat room is a basic example for learning purposes. It doesn't include security features and may not handle all edge cases. Consider it as a starting point for understanding socket programming in Java.
