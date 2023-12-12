@@ -25,13 +25,3 @@ This is a simple group chat application that allows multiple users to communicat
 
 - [A Group chat application in Java](^5^)
 - [Create a chat app with java sockets](^6^)
-
-Source: Conversation with Bing, 12/12/2023
-(1) A Group chat application in Java - GeeksforGeeks. https://www.geeksforgeeks.org/a-group-chat-application-in-java/.
-(2) Create a chat app with java sockets | by Jihen Barhoumi - Medium. https://medium.com/nerd-for-tech/create-a-chat-app-with-java-sockets-8449fdaa933.
-(3) How to Write a Good README File for Your GitHub Project - freeCodeCamp.org. https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/.
-(4) Creating a project - GitHub Docs. https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/creating-a-project.
-(5) Hello World - GitHub Docs. https://docs.github.com/en/get-started/quickstart/hello-world.
-(6) What Is Project Description: Key Criteria and Steps - KnowledgeHut. https://www.knowledgehut.com/blog/project-management/what-is-project-description.
-(7) mohsinht/Group-Chat-System-in-Java - GitHub. https://github.com/mohsinht/Group-Chat-System-in-Java.
-(8) GitHub - deysarkarswarup/ChitChat: A simple group chat Application .... https://github.com/deysarkarswarup/ChitChat.
